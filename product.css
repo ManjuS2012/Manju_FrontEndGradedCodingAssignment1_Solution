@@ -1,0 +1,92 @@
+#covidcare {
+    margin: auto;
+    /*to not show the scroll and to display from the starting position*/
+    padding-top: 25%;
+    overflow-x: auto;
+    white-space: nowrap;
+    /* overflow-x: scroll;*/
+}
+
+#diabetescare {
+    margin: auto;
+    /*to not show the scroll and to display from the starting position*/
+    padding-top: 0%;
+    overflow-x: auto;
+    white-space: nowrap;
+    /* overflow-x: scroll;*/
+}
+
+.product {
+    position: relative;
+    border-radius: 10px;
+    margin: 5px;
+    width: 300px;
+    height: 200px;
+    border: 2px solid green;
+    display: inline-block;
+}
+
+.product img {
+    border-radius: 10px;
+    width: 300px;
+    height: 200px;
+    display: inline-block;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0%;
+    background-color: rgba(210, 149, 228, 0.3);
+    width: 280px;
+    border-radius: 5px;
+    max-width: 280px;
+    transition: .5s ease;
+    opacity: 0;
+    overflow: hidden;
+    color: blue;
+    padding: 10px;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.prodtitle {
+    position: absolute;
+    bottom: 80%;
+    background-color: rgba(210, 149, 228, 0.3);
+    width: 280px;
+    border-radius: 5px;
+    max-width: 280px;
+    transition: .5s ease;
+    opacity: 0;
+    color: black;
+    padding: 10px;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.product:hover .overlay {
+    opacity: 1;
+}
+
+.product:hover .prodtitle {
+    opacity: 1;
+}
+
+.product:hover {
+    width: 310px;
+    height: 210px;
+}
+
+.cartbutton {
+    border-radius: 10%;
+    border-color: rgb(173, 109, 199);
+    background-color: rgb(215, 197, 232);
+    border-width: 3px;
+}
+
+.cartbutton:active {
+    background-color: rgb(250, 234, 230);
+    border-color: rgb(0, 255, 76);
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Front End Graded coding assignemnt1</title>
+    <link rel="stylesheet" href="labtest.css">
+    <script>
+        function welcome() {
+            window.open("labtest.html");
+        }   
+    </script>
+</head>
+
+<body>
+    <center>
+        <h1 style="font-family:Verdana, Geneva, Tahoma, sans-serif">Lab Test</h1>
+        <h3 style="font-family:Verdana, Geneva, Tahoma, sans-serif">Book a slot</h3>
+    </center>
+    <section id="labtestform">
+        <div class="row">
+            <div class="column1">
+                <article>
+                    <form action="">
+                        <article>
+                            <h3>1. Your contact details</h3>
+                            <table>
+                                <tr>
+                                    <th>Full Name</th>
+                                    <th>Patient id if exists</th>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" title="Full name" required spellcheck="true"></td>
+                                    <td><input type="number" min="6000000000" max="9999999999" required></td>
+                                </tr>
+                                <tr>
+                                    <th>Contact number</th>
+                                    <th>Email id</th>
+                                </tr>
+                                <tr>
+                                    <td><input type="number" min="6000000000" max="9999999999" required></td>
+                                    <td><input type="text" title="Email" required spellcheck="true"></td>
+                                </tr>
+                            </table>
+                        </article>
+
+                        <article>
+                            <h3>2. Address</h3>
+                            <table>
+                                <tr>
+                                    <th>H-No</th>
+                                    <th>Street</th>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" title="House number" required spellcheck="true"></td>
+                                    <td><input type="text" title="Street" required spellcheck="true"></td>
+                                </tr>
+                                <tr>
+                                    <th>Area</th>
+                                    <th>District</th>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" title="Area" required spellcheck="true"></td>
+                                    <td>&nbsp&nbsp
+                                        <select name="District" id="district" required
+                                            style="background-color:honeydew">
+                                            <option value="">Choose</option>
+                                            <option value="Bangalore Urban">Bangalore Urban</option>
+                                            <option value="Bangalore Rural">Bangalore Rural</option>
+                                            <option value="Ramnagar">Ramnagar</option>
+                                        </select>&nbsp&nbsp
+                                    </td>
+                                </tr>
+                            </table>
+                        </article>
+
+                        <article>
+                            <h3>3. Choose the test type</h3>
+                            <p>Check atleast one box without fail</p>
+                            <input type="checkbox" id="c1" name="option1" value="CBC">
+                            <label for="c1">CBC</label>
+                            <br>
+                            <input type="checkbox" id="c2" name="option2" value="Complete Urine">
+                            <label for="c2">Complete Urine</label>
+                            <br>
+                            <input type="checkbox" id="c3" name="option3" value="Lipid Profile">
+                            <label for="c3">Lipid Profile</label>
+                            <br>
+                            <input type="checkbox" id="c4" name="option4" value="Thyroid Stimulating Hormone(TSH)">
+                            <label for="c3">Thyroid Stimulating Hormone(TSH)</label>
+                            <input type="checkbox" id="c4" name="option5" value="Glucose Test">
+                            <label for="c3">Glucose Test</label>
+                        </article>
+
+                        <article>
+                            <h3>4. Do you want a hard copy of the report also?</h3>
+                            <input type="radio" id="c5" name="option" value="True" required>
+                            <label for="c5">Yes</label>
+                            <br>
+                            <input type="radio" id="c6" name="option" value="False">
+                            <label for="c6">No</label>
+                        </article>
+
+                        <article>
+                            <h3>5. Select Your Comfortable Date and Time</h3>
+                            <table>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Time</th>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" title="date" required spellcheck="true"></td>
+                                    <td><input type="text" title="time" required spellcheck="true"></td>
+                                </tr>
+                            </table>
+                        </article>
+
+                    </form>
+                </article>
+            </div>
+            <div class="column2"> <img src="Images\Lab-Test\lab-test.jpg" alt="Lab Test" style="width:80%">
+            </div>
+        </div>
+        <div class="row1">
+            <button onclick="location.href = 'labtest.html';" id="mySubmitButton1"
+                class="float-left submit-button">Reset</button>
+
+            <button onclick="location.href = 'submitresponse.html';" id="mySubmitButton2"
+                class="float-right submit-button">Submit</button>
+        </div>
+    </section>
+
+</body>
+
+</html>
